@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: "Satoshi Variable";
+}
+
+.zeb{
+    width: 100%;
+    min-height: 100vh;
+    background: url(Shape.png) no-repeat;
+    padding: 10px 8%;
+    background-size: cover;
+}
+
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 240px;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #278;
+    text-decoration: none;
+    font-family: "Clash Display";
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: local("Clash Display"),
+    url("ClashDisplay-Variable.ttf")
+}
+
+@font-face {
+    font-family: "Satoshi Variable";
+    src: local("Satoshi Variable"),
+    url("Satoshi-Variable.ttf")
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #ff0084;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Clash Display";
+}
+
