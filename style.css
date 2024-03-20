@@ -94,3 +94,29 @@ h1{
     max-width: 20ch;
     margin-inline: auto;
 }
+
+.menu-hamb{
+    display: none;
+}
+
+@media(max-width: 1200px){
+    .menu-hamb{
+        display: block;
+        width: 24px;
+        height: 23.571px;
+        flex-shrink: 0;
+    }
+
+    .ong{
+        display: none;
+    }
+    
+    .btn{
+        display: none;
+    }
+
+    .text{
+        font-size: 32px;
+        font-weight: 600;
+    }
+}
