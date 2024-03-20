@@ -7,6 +7,18 @@
         <title>Stage maquette</title>
 
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: 'hsl(329, 100%, 50%)',
+                        },
+                    },
+                },
+            };
+        </script>
+
         <style type="text/tailwindcss">
             @layer base {
                 @font-face {
@@ -20,11 +32,11 @@
             }
         </style>
     </head>
-    <bodyc class="font-['Clash_Display']">
+    <body class="font-['Clash_Display']">
         <header class="mt-12">
             <div class="w-[min(1440px,100%_-_4rem)] ms-auto me-auto">
                 <div class="flex justify-between items-center">
-                    <a href="">
+                    <a href="#">
                         <img
                             class="w-auto h-8 object-cover"
                             src="./images/123.webp"
@@ -32,14 +44,18 @@
                         />
                     </a>
                     <nav>
-                        <ul class="hidden lg:flex gap-8 items-center uppercase font-semibold">
-                            <li><a href="">Accueil</a></li>
-                            <li><a href="">Suivi de commande</a></li>
-                            <li><a href="">Contact</a></li>
+                        <ul
+                            aria-label="Primary"
+                            role="list"
+                            class="hidden lg:flex gap-8 items-center uppercase font-semibold"
+                        >
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Suivi de commande</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                     <button
-                        class="hidden lg:block bg-[#ff0084] rounded-full px-6 py-4 text-white font-bold leading-3 uppercase"
+                        class="hidden lg:block bg-primary rounded-full px-6 py-4 text-white font-bold leading-3 uppercase"
                     >
                         Commander en ligne
                     </button>
