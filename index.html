@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage macket</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header class=" bg-green-500 h-[100vh]">
-        <div class="main">
-            <img src="123.webp" class="icons w-[240px] top-[70px] left-[75px]">
-            <button><span></span>Commander en Ligne<img src=""></button>
-            <ul class="my-[30px] min-h-[400px] mx-[60px] text-base inline-block 
-            decoration-none text-blue-300 px-[5px] py-[20px]">
-                <li><a href="#" class="">Accueil</a></li>
-                <li><a href="#" class="">Suivi de commande</a></li>
-                <li><a href="#" class="">Contact</a></li>
-            </ul>
-        </div>
-    <h1>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    </h1>
-    </header>
-</body>
+        <title>Stage maquette</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style type="text/tailwindcss">
+            @layer base {
+                @font-face {
+                    font-family: 'Clash Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url('./fonts/ClashDisplay-Variable.ttf')
+                        format('truetype');
+                }
+            }
+        </style>
+    </head>
+    <bodyc class="font-['Clash_Display']">
+        <header class="mt-12">
+            <div class="w-[min(1440px,100%_-_4rem)] ms-auto me-auto">
+                <div class="flex justify-between items-center">
+                    <a href="">
+                        <img
+                            class="w-auto h-8 object-cover"
+                            src="./images/123.webp"
+                            alt=""
+                        />
+                    </a>
+                    <nav>
+                        <ul class="hidden lg:flex gap-8 items-center uppercase font-semibold">
+                            <li><a href="">Accueil</a></li>
+                            <li><a href="">Suivi de commande</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button
+                        class="hidden lg:block bg-[#ff0084] rounded-full px-6 py-4 text-white font-bold leading-3 uppercase"
+                    >
+                        Commander en ligne
+                    </button>
+                </div>
+            </div>
+        </header>
+    </body>
 </html>
