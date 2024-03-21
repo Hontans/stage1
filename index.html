@@ -4,63 +4,72 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Stage maquette</title>
+        <title>Stage maquette - Guillaume VARIN</title>
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            primary: 'hsl(329, 100%, 50%)',
-                        },
-                    },
-                },
-            };
-        </script>
-
-        <style type="text/tailwindcss">
-            @layer base {
-                @font-face {
-                    font-family: 'Clash Display';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-display: swap;
-                    src: url('./fonts/ClashDisplay-Variable.ttf')
-                        format('truetype');
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="./styles/style.css" />
     </head>
-    <body class="font-['Clash_Display']">
-        <header class="mt-12">
-            <div class="w-[min(1440px,100%_-_4rem)] ms-auto me-auto">
-                <div class="flex justify-between items-center">
+    <body>
+        <header class="primary-header">
+            <div class="container">
+                <div class="nav-wrapper">
                     <a href="#">
                         <img
-                            class="w-auto h-8 object-cover"
-                            src="./images/123.webp"
+                            class="logo"
+                            width="auto"
+                            height="30"
+                            src="https://dtf-industrie.fr/wp-content/uploads/2023/11/logo_long_v2.webp"
                             alt=""
                         />
                     </a>
-                    <nav>
+                    <button
+                        class="mobile-nav-toggle"
+                        aria-controls="primary-navigation"
+                    >
+                        <img
+                            class="icon-hamburger"
+                            src="images/icon-hamburger.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                        <img
+                            class="icon-close"
+                            src="images/icon-close.svg"
+                            alt=""
+                            aria-hidden="true"
+                        />
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <nav class="primary-navigation">
                         <ul
                             aria-label="Primary"
                             role="list"
-                            class="hidden lg:flex gap-8 items-center uppercase font-semibold"
+                            class="nav-list"
+                            id="primary-navigation"
                         >
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Suivi de commande</a></li>
+                            <li><a href="#">Acceuil</a></li>
+                            <li><a href="#">Suivi De Commande</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                     <button
-                        class="hidden lg:block bg-primary rounded-full px-6 py-4 text-white font-bold leading-3 uppercase"
+                        class="button | display-md-inline-flex display-sm-none"
                     >
                         Commander en ligne
                     </button>
                 </div>
             </div>
         </header>
+
+        <main>
+            <section class="hero | padding-block-900">
+                <div class="container">
+                    <div class="flow text-center-sm-only">
+                        <h1 class="fs-primary-heading fw-bold">
+                            How to Prepare your files to Print?
+                        </h1>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
