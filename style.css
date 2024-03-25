@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Clash Display";
+}
+
+.zeb{
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/Shape.png) no-repeat;
+    padding: 10px 8%;
+    background-size: cover;
+}
+
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.logo{
+    width: 240px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding-right: 60px;
+    justify-content: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 23px;
+}
+
+nav ul li a{
+    color: #1A1A1A;
+    text-decoration: none;
+    font-family: "Clash Display";
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: local("Clash Display"),
+    url("fonts/ClashDisplay-Variable.ttf")
+}
+
+@font-face {
+    font-family: "Satoshi Variable";
+    src: local("Satoshi Variable"),
+    url("fonts/Satoshi-Variable.ttf")
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    justify-content: center;
+    border-radius: 99em;
+    background: #ff0084;
+    color: #fff;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Clash Display";
+    border: 0;
+
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 80px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 100px;
+    max-width: 20ch;
+    margin-inline: auto;
+}
+.ico{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+    margin-right: 500px;
+    margin-left: 300px;
+}
+
+.lestruc{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 75px;
+}
+
+.menu-hamb{
+    display: none;
+}
+
+.card {
+    width: auto;
+    height: 530px;
+    padding: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    background-image: url('images/ti.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 30px;
+}
+
+.card_info {
+    width: 100%;
+    padding: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+
+    align-items: center;
+    text-align: center;
+    text-wrap: pretty;
+
+    background-color: white;
+
+    border: solid 1px grey;
+    border-radius: 15px;
+}
+
+.card_info h3 {
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.secondary_btn {
+    padding: 0.8em 2.25em;
+
+    border: solid 1px grey;
+    border-radius: 99px;
+
+    color: black;
+    font-family: 'Clash Display';
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition-duration: 250ms;
+}
+
+.secondary_btn:hover {
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+}
+
+.lescard2{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 75px;
+}
+
+
+
+
+.card2_info{
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+
+    align-items: center;
+    text-align: center;
+    text-wrap: pretty;
+
+    background-color: white;
+
+    border: solid 1px grey;
+    border-radius: 15px;
+}
+
+
+h1{
+    color: #000;
+    text-align: center;
+    font-family: "Clash Display";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+h3{
+    color: #1A1A1A;
+    text-align: center;
+    font-family: "Clash Display Variable";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 100% */
+    text-transform: uppercase;
+}
+
+p{
+    color: #1A1A1A;
+    text-align: center;
+    font-family: "Clash Display Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    text-transform: capitalize;
+}
+
+.logo1, .logo_1 {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid #000; /* Change this to the color you want for the border */
+    object-fit: cover; /* This will make sure your logo stays within the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDEEF;
+}
+
+.logo1, .logo_2 {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid #000; /* Change this to the color you want for the border */
+    object-fit: cover; /* This will make sure your logo stays within the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBF3CE;
+}
+
+.logo1, .logo_3 {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid #000; /* Change this to the color you want for the border */
+    object-fit: cover; /* This will make sure your logo stays within the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CAF0FF;
+}
+
+@media(max-width: 1200px){
+    .menu-hamb{
+        display: block;
+        width: 24px;
+        height: 23.571px;
+        flex-shrink: 0;
+    }
+
+    .ong{
+        display: none;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .text{
+        font-size: 32px;
+        font-weight: 600;
+    }
+}
