@@ -1,66 +1,112 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage macket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <title>Stage maquette</title>
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            primary: 'hsl(329, 100%, 50%)',
-                        },
-                    },
-                },
-            };
-        </script>
 
-        <style type="text/tailwindcss">
-            @layer base {
-                @font-face {
-                    font-family: 'Clash Display';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-display: swap;
-                    src: url('./fonts/ClashDisplay-Variable.ttf')
-                        format('truetype');
-                }
-            }
-        </style>
-    </head>
-    <body class="font-['Clash_Display']">
-        <header class="mt-12">
-            <div class="w-[min(1440px,100%_-_4rem)] ms-auto me-auto">
-                <div class="flex justify-between items-center">
-                    <a href="#">
-                        <img
-                            class="w-auto h-8 object-cover"
-                            src="./images/123.webp"
-                            alt=""
-                        />
-                    </a>
-                    <nav>
-                        <ul
-                            aria-label="Primary"
-                            role="list"
-                            class="hidden lg:flex gap-8 items-center uppercase font-semibold"
-                        >
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Suivi de commande</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <button
-                        class="hidden lg:block bg-primary rounded-full px-6 py-4 text-white font-bold leading-3 uppercase"
-                    >
-                        Commander en ligne
-                    </button>
+
+<body>
+
+<div class="zeb">
+
+    <nav>
+
+        <img src="images/123.webp" class="logo">
+
+        <ul class="ong">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Suivi de commande</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button class="btn">Commander en Ligne</button>
+
+        <img src="images/menu.svg" alt="menu hamb" class="menu-hamb">
+    </nav>
+
+    <div>
+        <h1 class="text">How to Prepare your files to Print?</h1>
+
+        <div class="ico">
+            <img src="images/palet.png" alt="palet">
+            <img src="images/pin.png" alt="pin">
+        </div>
+
+    </div>
+
+    <div>
+
+        <div class="lestruc">
+            <div class="card">
+                <div class="card_info">
+                    <h3>Guillaume est gay</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="secondary_btn">Cliquez ici</a>
                 </div>
             </div>
-        </header>
-    </body>
+
+            <div class="card">
+                <div class="card_info">
+                    <h3>Kylian aussi</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="secondary_btn">Cliquez ici</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_info">
+                    <h3>PTDR C Kylian qui a écris ca</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="secondary_btn">Cliquez ici</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <h1>COMMENT ESPACE D'IMPRESSION TRAVAIL?</h1>
+    </div>
+
+    <div>
+
+        <div class="lescard2">
+            <div class="card2_info">
+                <div class="logo_1">
+                    <img src="images/Frame.svg" alt="logo">
+                </div>
+                <h3>Choisissez</h3>
+                <p>Choisissez le format de vos transferts et importez vos fichiers prêts pour l'impression.</p>
+            </div>
+
+
+            <div class="card2_info">
+                <div class="logo_2">
+                    <img src="images/Frame1.svg" alt="logo">
+                </div>
+                <h3>Commandez</h3>
+                <p>Commandez vos impressions DTF personnalisées en fonction de vos délais et de vos besoins quantitatifs.</p>
+            </div>
+
+
+            <div class="card2_info">
+                <div class="logo_3">
+                    <img src="images/Frame3.svg" alt="logo">
+                </div>
+                <h3>Customizable Templates</h3>
+                <p>Helps business owners worldwide make beautiful invoices, look professional ona get solo roster</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
 </html>
