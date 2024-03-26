@@ -147,7 +147,7 @@ p:not([class]) {
 }
 
 p[data-width='wide'] {
-    max-width: 42ch;
+    max-width: 52ch;
 }
 
 /* utilities */
@@ -586,6 +586,24 @@ h4{
     line-height: normal;
     text-transform: uppercase;
     margin-top: 7rem;
+    align-items: center;
+}
+
+.description-textuelle{
+    position: relative;
+}
+
+
+.pinsau{
+    position: absolute;
+    right: 1000px;
+    bottom: 50px;
+}
+
+.palette{
+    position: absolute;
+    left: 1000px;
+
 }
 
 h5{
@@ -597,7 +615,9 @@ h5{
     font-weight: 600;
     line-height: 60px; /* 100% */
     text-transform: uppercase;
-    width: 1290px
+    width: 1100px;
+    align-items: center;
+    margin-top: 23px;
 }
 
 p {
@@ -607,16 +627,49 @@ p {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; /* Cette valeur détermine l'espacement entre les lignes */
+    line-height: 30px;
     text-transform: capitalize;
-    width: 520px;
+    width: 1000px;
     margin: 30px auto;
 }
 
 .text_flid{
+    display: flex;
     margin: 50px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
+.Name{
+    width: 850px;
+    height: 60px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+}
+
+.Email{
+    width: 850px;
+    height: 60px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+}
+
+.Message{
+    width: 850px;
+    height: 180px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+}
 
 .sr-only {
     position: absolute;
