@@ -567,18 +567,10 @@ input:where([type='text'], [type='email']) {
     color: hsl(0, 0%, 100%);
 }
 
-.padding-block-900 {
-    padding-block: 5rem;
-}
-
-.margin-bottom-700 {
-    margin-block-end: 3rem;
-}
-
 h4 {
     color: #ff0084;
     text-align: center;
-    font-family: 'Clash Display Variable';
+    font-family: 'Clash Display';
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -626,7 +618,6 @@ h5 {
 
 .Name {
     width: 850px;
-    height: 60px;
     flex-shrink: 0;
 
     border-radius: 10px;
@@ -636,7 +627,6 @@ h5 {
 
 .Email {
     width: 850px;
-    height: 60px;
     flex-shrink: 0;
 
     border-radius: 10px;
