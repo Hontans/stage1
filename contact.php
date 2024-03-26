@@ -39,9 +39,9 @@
                             role="list"
                             id="primary-navigation"
                         >
-                            <li><a href="/accueil.html">Accueil</a></li>
+                            <li><a href="/accueil.php">Accueil</a></li>
                             <li><a href="#">Suivi de commande</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/contact.php">Contact</a></li>
                         </ul>
                     </nav>
                     <button
@@ -55,20 +55,54 @@
 
         <main>
             <div class="container">
-                <div class="description-textuelle">
+                <div class="description-textuelle text-center">
                     <h4>Contactez-nous</h4>
                     <img src="/images/pin.png" class="pinsau" />
-                    <h5>Vous avez une question?</h5>
+                    <h5 class="margin-bottom-700">Vous avez une question ?</h5>
                     <img src="/images/palet.png" class="palette" />
                     <p data-width="wide">
                         Nous sommes disponibles du lundi au vendredi. Notre
                         service client vous répondra dans les plus brefs délais.
                     </p>
                 </div>
-                <form action="index.php" class="text_flid">
-                    <input type="text" placeholder="Name" class="Name" required />
-                    <input type="text" placeholder="Email" class="Email" required />
-                    <input type="text" placeholder="Message" class="Message" required />
+                <form action="index.php" class="text_field">
+                    <div>
+                        <label for="fullname" class="sr-only">
+                            Nom complet
+                        </label>
+                        <input 
+                            id="fullname"
+                            type="text"
+                            name="fullname"
+                            placeholder="Name"
+                            class="Name"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            class="Email"
+                            required 
+                        />
+                    </div>
+                    <div>
+                        <label for="message" class="sr-only">
+                            Message
+                        </label>
+                        <textarea 
+                            id="message"
+                            type="text"
+                            name="message"
+                            placeholder="Message"
+                            class="Message"
+                            required
+                        ></textarea>
+                    </div>
                     <button type="submit" class="button">Envoyer</button>
                 </form>
             </div>
