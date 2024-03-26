@@ -53,25 +53,25 @@
             </div>
         </header>
 
-    <main>
-        <div class="container">
-            <div class="description-textuelle">
-                <h4>Contactez-nous</h4>
-                <img src="/images/pin.png" class="pinsau">
-                <h5>Vous avez une question?</h5>
-                <img src="/images/palet.png" class="palette">
-                <p data-width="wide">Nous sommes disponibles du lundi au
-                    vendredi. Notre service  client vous
-                    répondra dans les plus brefs délais.</p>
+        <main>
+            <div class="container">
+                <div class="description-textuelle">
+                    <h4>Contactez-nous</h4>
+                    <img src="/images/pin.png" class="pinsau" />
+                    <h5>Vous avez une question?</h5>
+                    <img src="/images/palet.png" class="palette" />
+                    <p data-width="wide">
+                        Nous sommes disponibles du lundi au vendredi. Notre
+                        service client vous répondra dans les plus brefs délais.
+                    </p>
+                </div>
+                <form action="index.php" class="text_flid">
+                    <input type="text" placeholder="Name" class="Name" required />
+                    <input type="text" placeholder="Email" class="Email" required />
+                    <input type="text" placeholder="Message" class="Message" required />
+                    <button type="submit" class="button">Envoyer</button>
+                </form>
             </div>
-            <div class="text_flid">
-                <input type="text" placeholder="Name" class="Name"/>
-                <input type="text" placeholder="Email" class="Email"/>
-                <input type="text" placeholder="Message" class="Message"/>
-                <button class="btn">Envoyer</button>
-            </div>
-        </div>
-    </main>
-
+        </main>
     </body>
 </html>
