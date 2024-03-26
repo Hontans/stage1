@@ -575,7 +575,48 @@ input:where([type='text'], [type='email']) {
     margin-block-end: 3rem;
 }
 
-/* accessibility */
+
+h4{
+    color: #FF0084;
+    text-align: center;
+    font-family: "Clash Display Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 7rem;
+}
+
+h5{
+    color: #000;
+    text-align: center;
+    font-family: "Clash Display Variable";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 100% */
+    text-transform: uppercase;
+    width: 1290px
+}
+
+p {
+    color: #616161;
+    text-align: center;
+    font-family: "Clash Display Variable";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* Cette valeur détermine l'espacement entre les lignes */
+    text-transform: capitalize;
+    width: 520px;
+    margin: 30px auto;
+}
+
+.text_flid{
+    margin: 50px;
+}
+
 
 .sr-only {
     position: absolute;
