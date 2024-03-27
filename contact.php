@@ -66,7 +66,7 @@
                         service client vous répondra dans les plus brefs délais.
                     </p>
                 </div>
-                <form action="post_action.php" class="text_field">
+                <form action="post_action.php" method="post" class="text_field">
                     <div>
                         <label for="fullname" class="sr-only">
                             Nom complet
